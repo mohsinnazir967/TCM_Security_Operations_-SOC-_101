@@ -143,7 +143,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
    - Search for PowerShell or CMD in the Start menu, right-click, open file location, then right-click and choose "Send to Desktop (create shortcut)".
 
 ---
-# Ubuntu
+# Ubuntu VM
 ## 1. Create Ubuntu Linux Virtual Machine
 
 1. Download the Ubuntu Desktop ISO (LTS version recommended) from [ubuntu.com](https://ubuntu.com/download/desktop).
