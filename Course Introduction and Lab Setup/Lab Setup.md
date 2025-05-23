@@ -125,13 +125,13 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 1. Open **Command Prompt**.
 2. Navigate to your Documents folder:
 
-   ```cmd
+   ```bash
    cd \Documents
    ```
 
 3. Clone the repository:
 
-   ```cmd
+   ```bash
    git clone https://github.com/MalwareCube/SOC101_Free.git
    ```
 
@@ -189,11 +189,11 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 - Devices >> install guest edition CD Image
 - Open terminal
  
-```shell
+```bash
 cd /media/<user>/VBox_GAs_7.1.8/
 ```
 
- ```shell
+ ```bash
  sudo ./sudo ./VBoxLinuxAdditions.run
  sudo reboot now
 ```
