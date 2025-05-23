@@ -1,5 +1,7 @@
 # Lab Setup
 
+# Windows VM
+
 Set up a virtual lab environment for hands-on exercises using virtual machines (VMs). This allows you to safely install tools and generate artifacts without affecting your main operating system.
 
 ---
@@ -141,8 +143,8 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
    - Search for PowerShell or CMD in the Start menu, right-click, open file location, then right-click and choose "Send to Desktop (create shortcut)".
 
 ---
-
-## 11. Create Ubuntu Linux Virtual Machine
+# Ubuntu
+## 1. Create Ubuntu Linux Virtual Machine
 
 1. Download the Ubuntu Desktop ISO (LTS version recommended) from [ubuntu.com](https://ubuntu.com/download/desktop).
    - Example version: 24.04 LTS (or latest available). For older versions, see "alternative downloads".
@@ -159,7 +161,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 
 ---
 
-## 12. Install Ubuntu
+## 2. Install Ubuntu
 
 1. Start the Ubuntu VM.
 2. Boot from the ISO and select **Try or Install Ubuntu**.
@@ -178,7 +180,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 
 ---
 
-## 13. Ubuntu: Improve Usability & Prepare for Labs
+## 3. Ubuntu: Improve Usability & Prepare for Labs
 
 **Improve Usability**
 1. Log in to Ubuntu (user: eagle, password: password).
@@ -204,7 +206,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 
 ---
 
-## 14. Ubuntu: Get Course Files
+## 4. Ubuntu: Get Course Files
 
 1. Confirm git is installed:
    ```bash
@@ -223,7 +225,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 
 ---
 
-## 15. Ubuntu: Prepare for Labs
+## 5. Ubuntu: Prepare for Labs
 
 1. Run the install script to set up required packages and dependencies:
    ```bash
@@ -237,14 +239,14 @@ cd /media/<user>/VBox_GAs_7.1.8/
 
 ---
 
-## 16. Virtual Machine Networking (Isolate VMs from Host, Connect Them Together)
+# Virtual Machine Networking (Isolate VMs from Host, Connect Them Together)
 
 1. In VirtualBox, go to **Tools > Network** (hamburger menu).
 2. Under **NAT Networks**, click **Create**.
 3. Name the network (e.g., `SOC101`), set the IPv4 Prefix (e.g., `192.168.1.0/24`). Make sure it's different from your host's network.
 4. Keep DHCP enabled. Click **Apply**.
 
-### Attach Both VMs to the New NAT Network
+## Attach Both VMs to the New NAT Network
 
 5. For each VM (Windows and Ubuntu):
    - Right-click VM > **Settings > Network**
@@ -252,7 +254,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
    - Set **Attached to:** `NAT Network`, and pick your created network (e.g., `SOC`).
    - Click **OK**.
 
-### Test VM-to-VM Connectivity
+## Test VM-to-VM Connectivity
 
 6. Start both VMs.
 7. In Ubuntu, open Terminal, run:
