@@ -122,7 +122,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 
 ### Clone the Course Repository
 
-1. Open **Command Prompt**.
+1. Open **Git Bash**.
 2. Navigate to your Documents folder:
 
    ```bash
