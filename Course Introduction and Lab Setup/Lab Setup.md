@@ -16,7 +16,7 @@ Set up a virtual lab environment for hands-on exercises using virtual machines (
 
 **Recommended:** Oracle VirtualBox (free and cross-platform)
 
-### Steps:
+ **Steps:**
 1. Download VirtualBox from [virtualbox.org](https://www.virtualbox.org/).
    - Choose the installer for your host OS (Windows, macOS, Linux).
 2. Run the installer and follow the prompts.
