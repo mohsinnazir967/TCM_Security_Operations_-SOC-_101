@@ -195,35 +195,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
  sudo ./sudo ./VBoxLinuxAdditions.run
  sudo reboot now
 ```
-
-**Configurations** 
-
-1. Open Terminal (right-click desktop > Open in Terminal).
-   - Update packages:  
-     ```bash
-     sudo apt update
-     ```
-   - If prompted about systemctl daemon, run:  
-     ```bash
-     sudo systemctl daemon-reload
-     sudo apt update
-     ```
-   - Install required packages:
-     ```bash
-     sudo apt install bzip2 tar gcc make perl git
-     sudo apt install linux-headers-generic
-     sudo apt install linux-headers-$(uname -r)
-     ```
-   - In VirtualBox menu, go to **Devices > Insert Guest Additions CD image**.
-   - Mount the CD if not auto-mounted. In terminal:
-     ```bash
-     cd /media/TCM/VBox_GAs*   # tab to autocomplete
-     sudo ./VBoxLinuxAdditions.run
-     ```
-   - Reboot:  
-     ```bash
-     sudo reboot now
-     ```
+  
    - After reboot, go to **View > Full Screen Mode** in VirtualBox.
    - Enable clipboard: **Devices > Shared Clipboard > Bidirectional**.
 
@@ -243,7 +215,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 2. Clone the course repository to your Documents folder:
    ```bash
    cd ~/Documents
-   git clone <course-repo-link>
+   git clone https://github.com/MalwareCube/SOC101_Free.git
    ```
 3. Extract all course zip files from the cloned folder. Move extracted folders to the desktop for easy access.
 4. (Optional) Organize files and adjust dock/taskbar as you like.
@@ -255,7 +227,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 
 1. Run the install script to set up required packages and dependencies:
    ```bash
-   cd ~/Documents/sock\ 101/resources/install
+   cd ~/home/patriot/Documents/SOC101_Free/resources/install
    chmod +x install.sh
    ./install.sh
    ```
@@ -269,7 +241,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 
 1. In VirtualBox, go to **Tools > Network** (hamburger menu).
 2. Under **NAT Networks**, click **Create**.
-3. Name the network (e.g., `TCM`), set the IPv4 Prefix (e.g., `192.168.1.0/24`). Make sure it's different from your host's network.
+3. Name the network (e.g., `SOC101`), set the IPv4 Prefix (e.g., `192.168.1.0/24`). Make sure it's different from your host's network.
 4. Keep DHCP enabled. Click **Apply**.
 
 ### Attach Both VMs to the New NAT Network
@@ -277,7 +249,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 5. For each VM (Windows and Ubuntu):
    - Right-click VM > **Settings > Network**
    - Enable only **Adapter 1**.
-   - Set **Attached to:** `NAT Network`, and pick your created network (e.g., `TCM`).
+   - Set **Attached to:** `NAT Network`, and pick your created network (e.g., `SOC`).
    - Click **OK**.
 
 ### Test VM-to-VM Connectivity
@@ -287,19 +259,19 @@ cd /media/<user>/VBox_GAs_7.1.8/
    ```bash
    ifconfig
    ```
-   - Note the IP address (e.g., `192.168.1.13`).
-8. In Windows, open Command Prompt, run:
+   - Note the IP address (e.g., `192.168.1.5`).
+6. In Windows, open Command Prompt, run:
    ```cmd
    ipconfig
    ```
-   - Note the IP address (e.g., `192.168.1.12`).
-9. From Windows, ping Ubuntu:
+   - Note the IP address (e.g., `192.168.1.4).
+6. From Windows, ping Ubuntu:
    ```cmd
-   ping <Ubuntu-IP>
+   ping 192.168.1.5
    ```
    - You should get replies.
    - (Reverse pings from Ubuntu to Windows may fail unless Windows firewall is adjusted, but this is not required.)
 
 ---
 
-Your lab environment is now fully set up: both VMs are installed, configured, networked, and ready for practical SOC exercises.
+Lab environment is now fully set up: both VMs are installed, configured, networked, and ready for practical SOC exercises.
