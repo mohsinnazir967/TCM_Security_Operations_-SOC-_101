@@ -37,15 +37,15 @@ Set up a virtual lab environment for hands-on exercises using virtual machines (
 ## 4. Organize Lab Files
 
 1. Create a folder structure for your lab:
-   - Example: `Documents/virtual machines/sock 101`
-2. Move your downloaded Windows ISO file into the `sock 101` folder.
+   - Example: `Documents/virtual machines/soc-101`
+1. Move your downloaded Windows ISO file into the `soc-101` folder.
 
 ---
 
 ## 5. Create Windows Virtual Machine
 
 1. Open VirtualBox and click **New**.
-2. Name the VM (e.g., `sock 101 - Windows 10`).
+2. Name the VM (e.g., `SOChi 101-Windows10`).
 3. Set the machine folder to your lab directory.
 4. Attach the Windows ISO as the startup disk.
 5. Select **Skip Unattended Installation**.
@@ -102,12 +102,9 @@ Set up a virtual lab environment for hands-on exercises using virtual machines (
 
 ```powershell
 Set-MpPreference -DisableRealtimeMonitoring $true
-Set-MpPreference -DisableIOAVProtection $true
-Set-MpPreference -DisableIntrusionPreventionSystem $true
-Set-MpPreference -DisableScriptScanning $true
-Set-MpPreference -DisableArchiveScanning $true
+Set-MpPreference -DisableScanningNetworkFiles $true
 Set-MpPreference -DisableBlockAtFirstSeen $true
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Value 1
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
 ```
 
 - Confirm Defender is off by checking **Virus & Threat Protection**—it should report no active antivirus provider.
@@ -127,18 +124,18 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Nam
 2. Navigate to your Documents folder:
 
    ```cmd
-   cd %USERPROFILE%\Documents
+   cd \Documents
    ```
 
 3. Clone the repository:
 
    ```cmd
-   git clone <course-repo-link>
+   git clone https://github.com/MalwareCube/SOC101_Free.git
    ```
 
-4. Open the cloned `sock 101` folder. Inside, extract any provided zip files (right-click > Extract All), and place extracted folders on your Desktop for easy access.
+4. Open the cloned `soc 101` folder. Inside, extract any provided zip files (right-click > Extract All), and place extracted folders on your Desktop for easy access.
 
-5. (Optional) Organize your files by creating a folder (e.g., `sock 101 course files`) and moving all extracted materials inside.
+5. (Optional) Organize your files by creating a folder (e.g., `soc 101 course files`) and moving all extracted materials inside.
 
 6. (Optional) For quick access, create desktop shortcuts for PowerShell and Command Prompt:
    - Search for PowerShell or CMD in the Start menu, right-click, open file location, then right-click and choose "Send to Desktop (create shortcut)".
@@ -171,9 +168,9 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Nam
    - Choose **Install Ubuntu**, interactive installation, and default options.
    - For storage: **Erase disk and install Ubuntu** (this affects only the virtual disk, not your real one).
    - Set account info:
-     - Name: TCM
+     - Name: eagle
      - Computer name: sock 101 - Ubuntu
-     - Username: TCM
+     - Username: eagle
      - Password: password
    - Set your timezone and review settings.
 4. Click **Install** and wait for completion.
@@ -183,9 +180,25 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Nam
 
 ## 13. Ubuntu: Improve Usability & Prepare for Labs
 
-1. Log in to Ubuntu (user: TCM, password: password).
+**Improve Usability**
+1. Log in to Ubuntu (user: eagle, password: password).
 2. Install Guest Additions for better display and shared clipboard:
-   - Open Terminal (right-click desktop > Open in Terminal).
+
+- Devices >> install guest edition CD Image
+- Open terminal
+ 
+```shell
+cd /media/<user>/VBox_GAs_7.1.8/
+```
+
+ ```shell
+ sudo ./sudo ./VBoxLinuxAdditions.run
+ sudo reboot now
+```
+
+**Configurations** 
+
+1. Open Terminal (right-click desktop > Open in Terminal).
    - Update packages:  
      ```bash
      sudo apt update
