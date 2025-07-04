@@ -89,7 +89,7 @@
 
 ---
 
-### 📌 Summary
+### Summary
 
 - Email delivery = multi-stage process: MUA → MTA(s) → MDA.
 - Protocols (SMTP, POP3, IMAP) govern sending and receiving.
