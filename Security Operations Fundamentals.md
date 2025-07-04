@@ -55,7 +55,7 @@
 - **SIEM Role**:
   - Aggregates logs, supports real-time analytics, dashboarding
 - **Incident Response Phases**:
-  1. **ID** – Detection through events/alerts
+  1. **Identification** – Detection through events/alerts
   2. **Classification** – Assign severity & priority
   3. **Investigation** – Evidence gathering via logs/forensics
   4. **Contain** – Limit scope (isolate, disable)
