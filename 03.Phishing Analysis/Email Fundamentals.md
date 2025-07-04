@@ -83,7 +83,7 @@
   - Delivers received email to the correct user mailbox.
   - Applies filters, sorts folders.
 
-> 🧠 Optional terms (less commonly discussed):
+>  Optional terms (less commonly discussed):
 > - **MSA** (Mail Submission Agent) → overlaps with MUA.
 > - **MRA** (Mail Retrieval Agent) → overlaps with MDA.
 
