@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.Email Analysis Configuration.md",
+                "file": "03.Phishing Analysis/03.Email Analysis Configuration.md",
                 "mode": "source",
                 "source": false
               },
@@ -213,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03.Email Analysis Configuration.md",
+                "file": "03.Phishing Analysis/03.Email Analysis Configuration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -240,10 +240,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "adcf219ef0c33964",
+  "active": "5306937ff32baf54",
   "lastOpenFiles": [
     "03.Phishing Analysis/02.Email Fundamentals.md",
-    "03.Email Analysis Configuration.md",
+    "03.Phishing Analysis/03.Email Analysis Configuration.md",
     "03.Phishing Analysis/01.Introduction to Phishing.md",
     "03.Phishing Analysis",
     "Security Operation Fundamentals/Phishing Analysis",
