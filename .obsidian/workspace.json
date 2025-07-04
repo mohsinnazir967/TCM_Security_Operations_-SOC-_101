@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security Operations Fundamentals.md",
+                "file": "Security Operation Fundamentals/Security Operations Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security Operations Fundamentals.md",
+                "file": "Security Operation Fundamentals/Security Operations Fundamentals.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -198,10 +198,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7df5532bfd974388",
+  "active": "5306937ff32baf54",
   "lastOpenFiles": [
+    "Security Operation Fundamentals",
     "Course Introduction and Lab Setup/Lab Setup.md",
-    "Security Operations Fundamentals.md",
+    "Security Operation Fundamentals/Security Operations Fundamentals.md",
     "Course Introduction and Lab Setup/Course Introduction.md",
     "README.md",
     "lab-setup.md",
