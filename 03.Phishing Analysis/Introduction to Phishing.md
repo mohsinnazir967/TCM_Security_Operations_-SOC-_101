@@ -53,7 +53,7 @@ Phishing leverages **social engineering** based on human psychology:
 
 > Demonstrates phishing’s real-world impact on organizations and infrastructure.
 
-### 🛢 Colonial Pipeline (2021)
+### Colonial Pipeline (2021)
 - DarkSide ransomware via phishing → infected systems.
 - Shut down major US fuel supply pipeline.
 - 4.4M USD ransom paid.
