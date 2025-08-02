@@ -170,9 +170,9 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
    - Choose **Install Ubuntu**, interactive installation, and default options.
    - For storage: **Erase disk and install Ubuntu** (this affects only the virtual disk, not your real one).
    - Set account info:
-     - Name: eagle
+     - Name: leo
      - Computer name: sock 101 - Ubuntu
-     - Username: eagle
+     - Username: leo
      - Password: password
    - Set your timezone and review settings.
 4. Click **Install** and wait for completion.
@@ -194,7 +194,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 ```
 
  ```bash
- sudo ./sudo ./VBoxLinuxAdditions.run
+ sudo ./VBoxLinuxAdditions.run
  sudo reboot now
 ```
   
@@ -229,7 +229,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 
 1. Run the install script to set up required packages and dependencies:
    ```bash
-   cd ~/home/patriot/Documents/SOC101_Free/resources/install
+   cd ~/home/leo/Documents/SOC101_Free/resources/install
    chmod +x install.sh
    ./install.sh
    ```
