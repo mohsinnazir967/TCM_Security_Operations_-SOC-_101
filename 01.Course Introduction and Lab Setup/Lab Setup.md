@@ -148,16 +148,16 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 
 1. Download the Ubuntu Desktop ISO (LTS version recommended) from [ubuntu.com](https://ubuntu.com/download/desktop).
    - Example version: 24.04 LTS (or latest available). For older versions, see "alternative downloads".
-2. Move the downloaded ISO to your `sock 101` lab folder.
-3. In VirtualBox, click **New**.
-4. Name the VM (e.g., `sock 101 - Ubuntu`).
-5. Set the machine folder to your lab directory.
-6. Attach the Ubuntu ISO as the startup disk.
-7. Select **Skip Unattended Installation**.
-8. Allocate RAM (e.g., 8GB or as much as reasonable for your system).
-9. Set processors to 2.
-10. Create a dynamically allocated virtual hard disk (match your Windows VM storage if possible).
-11. Review settings and click **Finish**.
+1. Move the downloaded ISO to your `soc 101` lab folder.
+2. In VirtualBox, click **New**.
+3. Name the VM (e.g., `soc 101 - Ubuntu`).
+4. Set the machine folder to your lab directory.
+5. Attach the Ubuntu ISO as the startup disk.
+6. Select **Skip Unattended Installation**.
+7. Allocate RAM (e.g., 8GB or as much as reasonable for your system).
+8. Set processors to 2.
+9. Create a dynamically allocated virtual hard disk (match your Windows VM storage if possible).
+10. Review settings and click **Finish**.
 
 ---
 
