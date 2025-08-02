@@ -251,7 +251,7 @@ cd /media/<user>/VBox_GAs_7.1.8/
 5. For each VM (Windows and Ubuntu):
    - Right-click VM > **Settings > Network**
    - Enable only **Adapter 1**.
-   - Set **Attached to:** `NAT Network`, and pick your created network (e.g., `SOC`).
+   - Set **Attached to:** `NAT Network`, and pick your created network (e.g., `SOC101`).
    - Click **OK**.
 
 ## Test VM-to-VM Connectivity
