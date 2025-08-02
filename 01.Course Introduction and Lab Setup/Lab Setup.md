@@ -47,7 +47,7 @@ Set up a virtual lab environment for hands-on exercises using virtual machines (
 ## 5. Create Windows Virtual Machine
 
 1. Open VirtualBox and click **New**.
-2. Name the VM (e.g., `SOChi 101-Windows10`).
+2. Name the VM (e.g., `SOC-101-Windows10`).
 3. Set the machine folder to your lab directory.
 4. Attach the Windows ISO as the startup disk.
 5. Select **Skip Unattended Installation**.

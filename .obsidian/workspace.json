@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "01.Course Introduction and Lab Setup/Lab Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Lab Setup"
             }
           },
           {
@@ -213,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "01.Course Introduction and Lab Setup/Lab Setup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Lab Setup"
             }
           }
         ],
@@ -243,6 +243,7 @@
   "active": "adcf219ef0c33964",
   "lastOpenFiles": [
     "03.Phishing Analysis/03.Email Analysis Configuration.md",
+    "README.md",
     "03.Phishing Analysis/02.Email Fundamentals.md",
     "03.Phishing Analysis/01.Introduction to Phishing.md",
     "03.Phishing Analysis",
@@ -251,7 +252,6 @@
     "02.Security Operation Fundamentals",
     "01.Course Introduction and Lab Setup/Lab Setup.md",
     "01.Course Introduction and Lab Setup/Course Introduction.md",
-    "README.md",
     "lab-setup.md",
     "01.Course Introduction and Lab Setup"
   ]
