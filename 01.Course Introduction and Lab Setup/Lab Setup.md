@@ -148,9 +148,9 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpywar
 
 1. Download the Ubuntu Desktop ISO (LTS version recommended) from [ubuntu.com](https://ubuntu.com/download/desktop).
    - Example version: 24.04 LTS (or latest available). For older versions, see "alternative downloads".
-1. Move the downloaded ISO to your `soc 101` lab folder.
+1. Move the downloaded ISO to your `SOC 101` lab folder.
 2. In VirtualBox, click **New**.
-3. Name the VM (e.g., `soc 101 - Ubuntu`).
+3. Name the VM (e.g., `SOC 101 - Ubuntu`).
 4. Set the machine folder to your lab directory.
 5. Attach the Ubuntu ISO as the startup disk.
 6. Select **Skip Unattended Installation**.
